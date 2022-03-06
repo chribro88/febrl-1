@@ -1842,7 +1842,7 @@ class FieldComparatorTime(FieldComparator):
       elif (len(self.day_start) == 4):
         daystart_str = self.day_start
       else:
-        logging.exception('Day start is not a string of length 4 or 5: "%s"' \
+        logging.exception('Day start is not a string of length 4 or 5: "%s"' % \
                           (str(self.day_start)))
         raise Exception
 
